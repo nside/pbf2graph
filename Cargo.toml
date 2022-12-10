@@ -1,0 +1,9 @@
+[package]
+name = "pbf2graph"
+version = "0.1.0"
+edition = "2022"
+
+[dependencies]
+osmpbf = "*"
+rusqlite = { version = "0.28.0", features = ["bundled"] }
+csv = "*"

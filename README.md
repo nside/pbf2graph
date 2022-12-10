@@ -14,7 +14,7 @@ The road graph is written to two CSV files: one for the nodes and one for the ed
 node_id,latitude,longitude
 1,47.12345,-122.12345
 2,47.23456,-122.23456
-...
+```
 Each row in the file represents a node in the road graph, and includes the following information:
 
 node_id: The unique identifier of the node.

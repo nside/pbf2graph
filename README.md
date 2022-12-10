@@ -15,11 +15,11 @@ node_id,latitude,longitude
 1,47.12345,-122.12345
 2,47.23456,-122.23456
 ```
-Each row in the file represents a node in the road graph, and includes the following information:
+Each row in the file represents a node in the road graph, and includes the following information:   
 
-node_id: The unique identifier of the node.
-latitude: The latitude coordinate of the node.
-longitude: The longitude coordinate of the node.
+node_id: The unique identifier of the node.  
+latitude: The latitude coordinate of the node.  
+longitude: The longitude coordinate of the node.  
 
 The edge CSV file has the following format:
 

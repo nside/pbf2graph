@@ -8,6 +8,6 @@ license = "BSD-2-Clause"
 repository = "https://github.com/nside/pbf2graph"
 
 [dependencies]
-osmpbf = "*"
-csv = "*"
 clap = { version = "4.0.29", features = ["derive"] }
+csv = "1.1.6"
+osmpbf = "0.3.0"

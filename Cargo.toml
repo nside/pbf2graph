@@ -1,7 +1,11 @@
 [package]
 name = "pbf2graph"
 version = "0.3.0"
+authors = ["Denis Laprise <git@2ni.net>"]
 edition = "2021"
+description = "OSM Road Graph Extractor"
+license = "BSD"
+license-file = "LICENSE"
 
 [dependencies]
 osmpbf = "*"

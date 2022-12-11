@@ -1,8 +1,9 @@
 [package]
 name = "pbf2graph"
-version = "0.1.0"
+version = "0.3.0"
 edition = "2021"
 
 [dependencies]
 osmpbf = "*"
 csv = "*"
+clap = { version = "4.0.29", features = ["derive"] }

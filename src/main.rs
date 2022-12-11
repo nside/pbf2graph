@@ -89,7 +89,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         },
     )?;
 
-    let csv_dir = Path::new("csvs");
+    let csv_dir = Path::new("data");
     graph.write_csv(csv_dir)?;
 
     Ok(())

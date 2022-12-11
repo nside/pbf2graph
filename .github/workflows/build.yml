@@ -1,0 +1,61 @@
+name: Publish Binaries
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Set up a Rust development environment
+      - uses: rust-lang/actions/setup-rust@v1
+        with:
+          channel: stable
+
+      # Build the project in release mode for the default target platform
+      - run: cargo build --release
+
+      # Upload the binary files for the default target platform to the release
+      - uses: actions/upload-release-asset@v1
+        with:
+          asset_path: target/release/pbf2graph
+          asset_name: pbf2graph-v1.0.0-${{ env.TARGET }}
+          asset_content_type: application/octet-stream
+          release_id: ${{ github.event.release.id }}
+
+      # Build the project in release mode for the macOS target platform
+      - run: cargo build --release --target=x86_64-apple-darwin
+
+      # Upload the binary files for the macOS target platform to the release
+      - uses: actions/upload-release-asset@v1
+        with:
+          asset_path: target/release/pbf2graph
+          asset_name: pbf2graph-v1.0.0-x86_64-apple-darwin
+          asset_content_type: application/octet-stream
+          release_id: ${{ github.event.release.id }}
+
+      # Build the project in release mode for the Windows target platform
+      - run: cargo build --release --target=x86_64-pc-windows-gnu
+
+      # Upload the binary files for the Windows target platform to the release
+      - uses: actions/upload-release-asset@v1
+        with:
+          asset_path: target/release/pbf2graph.exe
+          asset_name: pbf2graph-v1.0.0-x86_64-pc-windows-gnu.exe
+          asset_content_type: application/octet-stream
+          release_id: ${{ github.event.release.id }}
+
+      # Build the project in release mode for the Linux target platform
+      - run: cargo build --release --target=x86_64-unknown-linux-musl
+
+      # Upload the binary files for the Linux target platform to the release
+      - uses: actions/upload-release-asset@v1
+        with:
+          asset_path: target/release/pbf2graph
+          asset_name: pbf2graph-v1.0.0-x86_64-unknown-linux-musl
+          asset_content_type: application/octet-stream
+          release_id: ${{ github.event.release.id }}

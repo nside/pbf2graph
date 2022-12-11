@@ -11,11 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Set up a Rust development environment
-      - uses: rust-lang/actions/setup-rust@v1
-        with:
-          channel: stable
-
       # Build the project in release mode for the default target platform
       - run: cargo build --release
 

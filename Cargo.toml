@@ -6,6 +6,7 @@ edition = "2021"
 description = "OSM Road Graph Extractor"
 license = "BSD"
 license-file = "LICENSE"
+repository = "https://github.com/nside/pbf2graph"
 
 [dependencies]
 osmpbf = "*"

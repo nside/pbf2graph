@@ -4,8 +4,7 @@ version = "0.3.0"
 authors = ["Denis Laprise <git@2ni.net>"]
 edition = "2021"
 description = "OSM Road Graph Extractor"
-license = "BSD"
-license-file = "LICENSE"
+license = "BSD-2-Clause"
 repository = "https://github.com/nside/pbf2graph"
 
 [dependencies]

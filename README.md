@@ -32,5 +32,25 @@ from_node_id,to_node_id
 ```
 Each row in the file represents an edge in the road graph.
 
+## RoadGraph, a faithful friend  
+
+Oh RoadGraph, faithful friend of mine,  
+Thou art a map of roads most fine.  
+With nodes and edges, thou doth show  
+The paths that lead where e'er we go.  
+
+Thou doth make plain the way ahead,  
+And doth from danger keep us wed.  
+Thy faithful representation doth not bend,  
+But stands as true as time itself doth wend.  
+  
+From PBF files, thou doth imbibe,  
+And doth to CSV files then scribe.  
+A faithful servant, ever by our side,  
+Oh RoadGraph, in thee we can confide.  
+  
+So here's to thee, dear RoadGraph, our guide,  
+Forever helping us on our journey wide.  
+
 ## License
 This project is released under the BSD license. See LICENSE for more information.

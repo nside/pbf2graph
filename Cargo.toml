@@ -1,6 +1,6 @@
 [package]
 name = "pbf2graph"
-version = "0.4.0"
+version = "0.4.1"
 authors = ["Denis Laprise <git@2ni.net>"]
 edition = "2021"
 description = "OSM Road Graph Extractor"

@@ -2,6 +2,8 @@
 
 This project is a simple command-line tool that reads a .osm.pbf file containing OpenStreetMap data and generates a road graph in the form of two CSV files: one for the nodes and one for the edges. The road graph can be used for various purposes, such as routing or visualizing the road network.
 
+:warning: This crate is entirely produced by ChatGPT
+
 ![alt text](docs/hero.png)
 
 ## Running

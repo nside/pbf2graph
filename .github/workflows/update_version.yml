@@ -34,4 +34,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add Cargo.toml
           git commit -m "Update Cargo.toml version to $VERSION" || true
-          git push
+          git checkout -b temp-update-version-branch
+          git push --set-upstream origin temp-update-version-branch
+          git checkout -
+          git branch -D temp-update-version-branch

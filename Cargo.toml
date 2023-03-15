@@ -11,4 +11,4 @@ repository = "https://github.com/nside/pbf2graph"
 clap = { version = "4.0.29", features = ["derive"] }
 csv = "1.1.6"
 osmpbf = "0.3.0"
-ordered-float = "*"
+ordered-float = "3.4.0"
